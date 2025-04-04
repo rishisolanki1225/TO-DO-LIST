@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    overflow:hidden;
+    background-color: #386641;
+ }
+#circle1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #6a994e;
+    filter:blur(10px);
+    margin-left:20rem;
+}
+#circle2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #6a994e;
+    filter:blur(10px);
+    margin-left: 20rem;
+    position:relative;
+    z-index:-23;
+}
+#square{
+    width: 26rem;
+    min-height: 1rem;
+    background-color: #a7c957;
+    backdrop-filter: blur(30px);
+    opacity:0.9;
+    
+}
+input{
+    flex:1;
+    width:100% ;
+    background:#f2e8cf;
+}
+.row{
+    margin-top: 30%;
+} 
+.btn:hover{
+ background-color: #6a994e;
+ color:#f2e8cf
+}
+.btn{
+    color:#386641;
+    border:1px solid #386641;
+}
+ul li{
+    list-style: none;
+    user-select:none;
+    position:relative;
+    padding: 10px 8px 12px 50px;
+}
+ul li::before{
+    content:'''';
+    position: absolute;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-image: url(unchecked-41.svg);
+    background-size: cover;
+    background-position:center;
+    left:15px;
+ } 
+
+ ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+ }
+ ul li.checked::before{
+  background-image: url(tick.png);
+ }    
+ul li span{
+    padding:1px 6px;
+    position: absolute;
+    right: 10px;    
+    font-size: 1rem;
+    color:#386641;
+    border-radius:50%;
+}
+ul li span:hover{
+    background-color:#57883b;
+    color:aliceblue;
+    cursor: pointer;
+}
+
+

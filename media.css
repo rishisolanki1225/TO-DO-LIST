@@ -1,0 +1,27 @@
+@media screen and (min-width:0px) and  (max-width: 768px) {
+    #circle1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #6a994e;
+            filter:blur(10px);
+            margin-left:0px;
+        }
+        #square{
+            width: 20rem;
+            min-height: 10rem;
+            background-color: #a7c957;
+            opacity:0.9;
+            
+        }
+        #circle2{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #6a994e;
+            filter:blur(10px);
+            margin-left: 16rem;
+            position:relative;
+            z-index:-23;
+        }
+    }
